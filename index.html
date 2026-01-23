@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eden Belayneh | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+  <div class="backdrop backdrop--one"></div>
+  <div class="backdrop backdrop--two"></div>
+  <div class="backdrop backdrop--three"></div>
+
+  <header class="site-header">
+    <div class="brand">
+      <span class="brand__symbol">▸</span>
+      <span class="brand__mark">Eden.dev</span>
+    </div>
+    <nav class="nav">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#achievements">Achievements</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero__hello"><span>✨</span> HELLO WORLD <span>✨</span></div>
+      <p class="hero__im">I'm</p>
+      <h1 class="hero__title">Eden Belayneh</h1>
+      <p class="hero__role">Software Engineer</p>
+
+      <div class="hero__social">
+        <a class="pill-btn pill-btn--ghost" id="hero-github" href="https://github.com/Edenbel27" target="_blank" rel="noreferrer" aria-label="GitHub profile">
+          <svg aria-hidden="true" viewBox="0 0 24 24" class="icon"><path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.5 2.87 8.31 6.84 9.66.5.09.68-.22.68-.49 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.37-3.37-1.37-.45-1.17-1.11-1.48-1.11-1.48-.91-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.9 1.57 2.35 1.12 2.93.85.09-.67.35-1.12.63-1.38-2.22-.26-4.56-1.14-4.56-5.08 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.7 0 0 .84-.27 2.75 1.05a9.35 9.35 0 0 1 5 0c1.91-1.32 2.75-1.05 2.75-1.05.55 1.4.2 2.44.1 2.7.64.72 1.03 1.63 1.03 2.75 0 3.95-2.34 4.82-4.57 5.08.36.32.68.95.68 1.92 0 1.39-.01 2.51-.01 2.85 0 .27.18.59.69.49A10.08 10.08 0 0 0 22 12.26C22 6.58 17.52 2 12 2Z" fill="currentColor"></path></svg>
+          GitHub
+        </a>
+        <a class="pill-btn pill-btn--primary" id="hero-linkedin" href="https://www.linkedin.com/in/edenbel27/" target="_blank" rel="noreferrer" aria-label="LinkedIn profile">
+          <svg aria-hidden="true" viewBox="0 0 24 24" class="icon"><path d="M4.98 3.5C4.98 4.88 3.9 6 2.5 6S0 4.88 0 3.5 1.08 1 2.48 1s2.5 1.12 2.5 2.5ZM.22 8.11h4.56V24H.22V8.11ZM8.88 8.11h4.37v2.17h.06c.61-1.16 2.1-2.38 4.33-2.38 4.63 0 5.48 3.05 5.48 7.01V24h-4.56v-7.3c0-1.74-.03-3.98-2.43-3.98-2.44 0-2.81 1.9-2.81 3.85V24H8.88V8.11Z" fill="currentColor"></path></svg>
+          LinkedIn
+        </a>
+      </div>
+
+      <div class="hero__cards">
+        <div class="contact-card">
+          <span class="contact-card__icon">✉️</span>
+          <p class="contact-card__label">Email</p>
+          <p class="contact-card__value">edenbelayneh27@gmail.com</p>
+        </div>
+        <div class="contact-card">
+          <span class="contact-card__icon">📞</span>
+          <p class="contact-card__label">Phone</p>
+          <p class="contact-card__value">+251-944168536</p>
+        </div>
+        <div class="contact-card">
+          <span class="contact-card__icon">📍</span>
+          <p class="contact-card__label">Location</p>
+          <p class="contact-card__value">Addis Ababa, ET</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="section-chip">&lt;about /&gt;</div>
+      <div class="about-grid">
+        <div class="about-left">
+          <h2 class="section-title">About Me</h2>
+          <p class="about-text">
+            I'm a passionate Software Engineer pursuing my Bachelor's degree at
+            <span class="hl-stylish">Addis Ababa Science and Technology University</span>
+            focused on building impactful software.
+          </p>
+          <p class="about-text">
+            From <span class="hl-pink">AI-powered mental health platforms</span> to
+            <span class="hl-pink">real-time car rental systems</span>, I thrive on building scalable solutions that
+            make a difference.
+          </p>
+          <p class="about-text">
+            Currently expanding my expertise through the
+            <span class="hl-stylish">Africa To Silicon Valley (A2SV)</span> program, where I've mastered data structures
+            and algorithms through 400+ problem-solving challenges.
+          </p>
+        </div>
+        <div class="about-right">
+          <article class="stat-card stat-card--teal">
+            <div class="stat-card__icon">&lt;/&gt;</div>
+            <div>
+              <p class="stat-card__value">400+</p>
+              <p class="stat-card__label">Problems Solved</p>
+              <p class="stat-card__note">LeetCode &amp; Codeforces</p>
+            </div>
+          </article>
+          <article class="stat-card stat-card--pink">
+            <div class="stat-card__icon">👥</div>
+            <div>
+              <p class="stat-card__value">13+</p>
+              <p class="stat-card__label">Team Members Led</p>
+              <p class="stat-card__note">Leadership Experience</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel" id="experience">
+      <div class="section-chip">&lt;experience /&gt;</div>
+      <h2 class="section-title experience-title">Professional Experience</h2>
+      <div class="exp-outer-card">
+        <div class="exp-timeline"></div>
+        <div class="exp-card">
+          <div class="exp-card__header">
+            <div class="exp-card__icon"><span>👜</span></div>
+            <div>
+              <div class="exp-card__role">Software Engineer Intern</div>
+              <div class="exp-card__company"><a href="https://eskalate.io/" target="_blank" rel="noreferrer" style="color:inherit;text-decoration:underline;">Eskalate</a></div>
+              <div class="exp-card__time"><span class="exp-card__calendar">&#128197;</span> June 2025 – September 2025</div>
+            </div>
+          </div>
+          <ul class="exp-list">
+            <li>Collaborated with a small team to ship a blog platform featuring AI-powered content suggestions and REST APIs.</li>
+          </ul>
+          <div class="exp-tags">
+            <span class="exp-tag exp-tag--orange">Go</span>
+            <span class="exp-tag exp-tag--blue">Gin</span>
+            <span class="exp-tag exp-tag--yellow">MongoDB</span>
+            <span class="exp-tag exp-tag--gray">REST API</span>
+            <span class="exp-tag exp-tag--gray">Clean Architecture</span>
+            <span class="exp-tag exp-tag--orange">AI</span>
+            <span class="exp-tag exp-tag--amber">Team Leadership</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel" id="projects">
+      <div class="section-chip">&lt;projects /&gt;</div>
+      <h2 class="section-title project-title">Featured Work</h2>
+      <div class="project-subheading">Building solutions that matter</div>
+      <div class="projects-grid">
+        <article class="project-card project-card--blue">
+          <div class="project-card__iconbox">🌍</div>
+          <div style="flex:1;">
+            <div class="project-meta"><a href="https://drive.google.com/file/d/1ba3p4rOIwJlOsBd8zkVs1RhohX-lbipx/view?usp=sharing" target="_blank" rel="noreferrer" style="color:inherit;text-decoration:underline;">Earth Vibration Visualizer</a></div>
+            <div class="project-subtitle">Multidisciplinary Engineering Collaboration</div>
+            <div class="project-date"> <span>📅</span> Nov 2025 – Dec 2025</div>
+            <p class="project-desc">Visualizes earth vibration data in interactive graphs and reports daily alert counts plus average measurements.</p>
+            <div class="project-tags">
+              <span class="project-tag">Data Viz</span>
+              <span class="project-tag">Analytics</span>
+              <span class="project-tag">Multidisciplinary</span>
+              <span class="project-tag">Flutter</span>
+              <span class="project-tag">MQTT</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card project-card--blue">
+          <div class="project-card__iconbox">📦</div>
+          <div style="flex:1;">
+            <div class="project-meta">
+              <a href="https://github.com/Edenbel27/Shelf_Life_Tracker_Mobile_App" target="_blank" rel="noreferrer" style="color:inherit;text-decoration:underline;">Shelf Life Tracker</a>
+              <span style="margin: 0 6px; color: #a5adc6;">•</span>
+              <a href="https://drive.google.com/file/d/1bUA34iu9HiL9-qxblTaMNVAtqTJgvp-r/view?usp=sharing" target="_blank" rel="noreferrer" style="color:inherit;text-decoration:underline;">Demo</a>
+            </div>
+            <div class="project-subtitle">Inventory, Expiry &amp; Profit Tracking App</div>
+            <div class="project-date"> <span>📅</span> Dec 2025 – Jan 2026</div>
+            <p class="project-desc">Flutter app for shop owners to monitor stock, expiry risk, and profits with Firebase and Google Auth.</p>
+            <div class="project-tags">
+              <span class="project-tag">Flutter</span>
+              <span class="project-tag">Firebase</span>
+              <span class="project-tag">Google Auth</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card project-card--purple">
+          <div class="project-card__iconbox">🧠</div>
+          <div style="flex:1;">
+            <div class="project-meta">
+              <a href="https://github.com/RealEskalate/G6-WorryMate" target="_blank" rel="noreferrer" style="color:inherit;text-decoration:underline;">Worrymate</a>
+              <span style="margin: 0 6px; color: #a5adc6;">•</span>
+              <a href="https://drive.google.com/file/d/1bTap3XeKjSPfJE5yqjGBOwcaCXuuqVsA/view?usp=sharing" target="_blank" rel="noreferrer" style="color:inherit;text-decoration:underline;">Demo</a>
+            </div>
+            <div class="project-subtitle">AI Powered Mental Health Platform</div>
+            <div class="project-date"> <span>📅</span> Aug 2025 – Sep 2025</div>
+            <p class="project-desc">AI-driven mental health platform with a privacy-first Go/Gin backend and Next.js/Flutter clients.</p>
+            <div class="project-tags">
+              <span class="project-tag">Go/Gin</span>
+              <span class="project-tag">AI</span>
+              <span class="project-tag">Next.js</span>
+              <span class="project-tag">Flutter</span>
+              <span class="project-tag">Agile</span>
+            </div>
+          </div>
+        </article>
+        <article class="project-card project-card--green">
+          <div class="project-card__iconbox">🚗</div>
+          <div style="flex:1;">
+            <div class="project-meta"><a href="https://github.com/Edenbel27/Car-Rental-System" target="_blank" rel="noreferrer" style="color:inherit;text-decoration:underline;">Car Rental Platform</a></div>
+            <div class="project-subtitle">Real-time Booking Platform</div>
+            <div class="project-date"> <span>📅</span> May 2025 – Jun 2025</div>
+            <p class="project-desc">Spring Boot + MySQL platform for real-time car bookings with WebSocket updates and JWT security.</p>
+            <div class="project-tags">
+              <span class="project-tag">Java</span>
+              <span class="project-tag">Spring Boot</span>
+              <span class="project-tag">WebSocket</span>
+              <span class="project-tag">MySQL</span>
+              <span class="project-tag">JWT</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card project-card--purple">
+          <div class="project-card__iconbox">🎯</div>
+          <div style="flex:1;">
+            <div class="project-meta"><a href="https://github.com/HabibElias/Student-Internship-Portal" target="_blank" rel="noreferrer" style="color:inherit;text-decoration:underline;">Student Internship Portal</a></div>
+            <div class="project-subtitle">Campus Talent Meets Employers</div>
+            <div class="project-date"> <span>📅</span> Mar 2025 – Jun 2025</div>
+            <p class="project-desc">Connects campus students seeking internships with companies offering roles, built with PHP and TypeScript.</p>
+            <div class="project-tags">
+              <span class="project-tag">PHP</span>
+              <span class="project-tag">TypeScript</span>
+              <span class="project-tag">Web App</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="education-section" id="education">
+      <div class="section-chip">&lt;education /&gt;</div>
+      <h2 class="section-title education-title">Academic Journey</h2>
+      <div class="edu-grid">
+        <div class="edu-card big">
+          <div class="edu-card__icon"><span>🎓</span></div>
+          <div class="edu-card__body">
+            <h3 class="edu-degree">Bachelor of Science</h3>
+            <div class="edu-major hl-stylish">Software Engineering</div>
+            <div class="edu-school">Addis Ababa Science and Technology University</div>
+            <div class="edu-meta">
+              <span>02/2023 – 06/2027</span>
+              <span>·</span>
+              <span>Addis Ababa, Ethiopia</span>
+            </div>
+            <div class="edu-cgpa-badge">CGPA: 3.6/4.0</div>
+            <hr class="edu-divider" />
+            <div class="edu-courses-label">Relevant Coursework:</div>
+            <div class="edu-courses">
+              <span>Data Structures & Algorithms</span>
+              <span>C++</span>
+              <span>OOP (Java)</span>
+              <span>Internet Programming</span>
+              <span>Database</span>
+              <span>Computer Architecture</span>
+              <span>Operating System</span>
+            </div>
+          </div>
+        </div>
+        <div class="edu-card big">
+          <div class="edu-card__icon"><span>🏫</span></div>
+          <div class="edu-card__body">
+            <h3 class="edu-degree">Coding Academy</h3>
+            <div class="edu-major hl-stylish">Africa To Silicon Valley (A2SV)</div>
+            <div class="edu-school">Africa To Silicon Valley (A2SV)</div>
+            <div class="edu-meta">
+              <span>01/2025 – 11/2025</span>
+              <span>·</span>
+              <span>Addis Ababa, Ethiopia</span>
+            </div>
+            <div class="edu-progress">
+              <div class="edu-progress-label">LeetCode &amp; Codeforces</div>
+              <div class="edu-progress-bar">
+                <div class="edu-progress-fill" style="width: 80%"></div>
+                <span class="edu-progress-value">400+</span>
+              </div>
+              <div class="edu-progress-note">Problems Solved</div>
+            </div>
+            <div class="edu-note">
+              Gained a solid foundation in data structures and algorithms through intensive problem-solving and competitive programming.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel" id="skills">
+      <div class="section-chip">&lt;skills /&gt;</div>
+      <!-- Extra space before Achievements section -->
+      <div style="margin-bottom: 48px;"></div>
+      <h2 class="section-title skills-title">Technical Arsenal</h2>
+      <div class="skills-subheading">Tools and technologies I work with</div>
+      <div class="skills-columns">
+        <div class="skill-stack">
+          <div class="skill-stack__bar skill-stack__bar--blue"></div>
+          <h3 class="skills-header skills-header--blue"><span class="skills-header-bar skills-header-bar--blue"></span>Languages</h3>
+          <ul>
+            <li>Go</li>
+            <li>Java</li>
+            <li>Python</li>
+            <li>C++</li>
+            <li>JavaScript</li>
+          </ul>
+        </div>
+        <div class="skill-stack">
+          <div class="skill-stack__bar skill-stack__bar--purple"></div>
+          <h3 class="skills-header skills-header--pink"><span class="skills-header-bar skills-header-bar--pink"></span>Frameworks &amp; Tools</h3>
+          <ul>
+            <li>Spring Boot</li>
+            <li>Gin</li>
+            <li>Django</li>
+            <li>Flutter</li>
+          </ul>
+        </div>
+        <div class="skill-stack">
+          <div class="skill-stack__bar skill-stack__bar--green"></div>
+          <h3>Tools &amp; DB</h3>
+          <ul>
+            <li>Git</li>
+            <li>MongoDB</li>
+            <li>MySQL</li>
+            <li>Firebase</li>
+            <li>Postman</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="achievements-section" id="achievements">
+      <div class="section-chip">&lt;achievements /&gt;</div>
+      <h2 class="section-title achievements-title">Achievements &amp; Recognition</h2>
+      <div class="achievements-subheading">Milestones and accolades</div>
+      <div class="achievements-cards">
+        <div class="achievement-card achievement-card--orange">
+          <div class="achievement-card__icon">🏆</div>
+          <div class="achievement-card__content">
+            <div class="achievement-card__title"><span>1st Place</span> <span class="achievement-card__spark">✨</span></div>
+            <div class="achievement-card__subtitle">African Robotics Championship</div>
+            <div class="achievement-card__desc">First place winner in the African Robotics Championship competition</div>
+          </div>
+        </div>
+        <div class="achievement-card achievement-card--purple">
+          <div class="achievement-card__icon">🔖</div>
+          <div class="achievement-card__content">
+            <div class="achievement-card__title"><span>Top 5 Finalist</span> <span class="achievement-card__spark">✨</span></div>
+            <div class="achievement-card__subtitle">Google Developer Groups Hackathon</div>
+            <div class="achievement-card__desc">Placed among top 5 teams in Google Developer Groups hackathon</div>
+          </div>
+        </div>
+        <div class="achievement-card achievement-card--cyan">
+          <div class="achievement-card__icon">⭐</div>
+          <div class="achievement-card__content">
+            <div class="achievement-card__title"><span>Dean's List</span> <span class="achievement-card__spark">✨</span></div>
+            <div class="achievement-card__subtitle">Academic Excellence</div>
+            <div class="achievement-card__desc">Achieved &gt;3.5 GPA in Software Engineering coursework</div>
+          </div>
+        </div>
+      </div>
+      <div class="achievements-stats">
+        <div class="achievement-stat">
+          <div class="achievement-stat__value">400+</div>
+          <div class="achievement-stat__label">Problems Solved</div>
+        </div>
+        <div class="achievement-stat">
+          <div class="achievement-stat__value">13+</div>
+          <div class="achievement-stat__label">Team Members Led</div>
+        </div>
+        <div class="achievement-stat">
+          <div class="achievement-stat__value">5</div>
+          <div class="achievement-stat__label">Major Projects</div>
+        </div>
+      </div>
+    </section>
+    <section class="panel contact" id="contact">
+      <div class="section-chip">&lt;contact /&gt;</div>
+      <h2 class="section-title contact-title">Let's Build Something</h2>
+      <div class="contact-subheading">Got a project in mind? Let's talk!</div>
+      <div class="contact-grid">
+        <div class="contact-info-card">
+          <div class="contact-info-title">Get in touch</div>
+          <div class="contact-info-desc">I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.</div>
+          <div class="contact-info-list">
+            <div class="contact-info-item">
+              <span class="contact-info-icon contact-info-icon--green">&#9993;</span>
+              <div>
+                <div class="contact-info-label">Email</div>
+                <div class="contact-info-value">edenbelayneh27@gmail.com</div>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <span class="contact-info-icon contact-info-icon--blue">&#128222;</span>
+              <div>
+                <div class="contact-info-label">Phone</div>
+                <div class="contact-info-value">+251-944168536</div>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <span class="contact-info-icon contact-info-icon--purple">&#128205;</span>
+              <div>
+                <div class="contact-info-label">Location</div>
+                <div class="contact-info-value">Addis Ababa, Ethiopia</div>
+              </div>
+            </div>
+          </div>
+          <div class="contact-info-social">
+            <span>Connect with me</span>
+            <div class="contact-info-social-links">
+              <a class="contact-social-btn" id="contact-github" href="https://github.com/Edenbel27" target="_blank" rel="noreferrer" aria-label="GitHub">
+                <span class="contact-social-icon">
+                  <svg aria-hidden="true" viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.5 2.87 8.31 6.84 9.66.5.09.68-.22.68-.49 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.37-3.37-1.37-.45-1.17-1.11-1.48-1.11-1.48-.91-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.9 1.57 2.35 1.12 2.93.85.09-.67.35-1.12.63-1.38-2.22-.26-4.56-1.14-4.56-5.08 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.7 0 0 .84-.27 2.75 1.05a9.35 9.35 0 0 1 5 0c1.91-1.32 2.75-1.05 2.75-1.05.55 1.4.2 2.44.1 2.7.64.72 1.03 1.63 1.03 2.75 0 3.95-2.34 4.82-4.57 5.08.36.32.68.95.68 1.92 0 1.39-.01 2.51-.01 2.85 0 .27.18.59.69.49A10.08 10.08 0 0 0 22 12.26C22 6.58 17.52 2 12 2Z"></path></svg>
+                </span>
+              </a>
+              <a class="contact-social-btn contact-social-btn--blue" id="contact-linkedin" href="https://www.linkedin.com/in/edenbel27/" target="_blank" rel="noreferrer"><span class="contact-social-icon">in</span></a>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form" id="contact-form">
+          <div class="contact-form-group">
+            <label for="name">Abebe Kebede</label>
+            <input type="text" id="name" name="name" placeholder="Abebe Kebede" autocomplete="off" />
+          </div>
+          <div class="contact-form-group">
+            <label for="email">example@gmail.com</label>
+            <input type="email" id="email" name="email" placeholder="example@gmail.com" autocomplete="off" />
+          </div>
+          <div class="contact-form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..."></textarea>
+          </div>
+          <button type="submit" class="contact-form-btn"><span class="contact-form-btn-icon">&#9993;</span> Send Message</button>
+          <div class="contact-form-status" id="contact-status" aria-live="polite"></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 Eden Belayneh. Crafted for impact.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
