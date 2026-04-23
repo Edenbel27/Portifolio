@@ -98,11 +98,15 @@ section, .section {
   display: flex;
   flex-direction: column;
   gap: 0.5em;
+  align-items: center;
+  text-align: center;
 }
 .contact-info-social-links {
   display: flex;
   gap: 10px;
   margin-top: 0.3em;
+  justify-content: center;
+  width: 100%;
 }
 .contact-social-btn {
   width: 38px;
@@ -795,7 +799,6 @@ main { max-width: var(--max-width); margin: 24px auto 0; display: flex; flex-dir
   white-space: normal;
   flex-wrap: wrap;
 }
-}
 .exp-list__icon {
   color: #ff9d2c;
   font-size: 1.1em;
@@ -1386,5 +1389,221 @@ body {
 /* Make the hero name’s underline a bit wider */
 .hero__title::after {
   width: 120px;
+}
+
+/* Mobile refinement layer */
+@media (max-width: 860px) {
+  section,
+  .section {
+    scroll-margin-top: 120px;
+  }
+
+  main {
+    margin-top: 16px;
+    gap: 20px;
+  }
+
+  .panel,
+  .about,
+  .education-section,
+  .achievements-section {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .site-header {
+    padding: 12px 10px;
+    align-items: stretch;
+    gap: 8px;
+  }
+
+  .nav {
+    width: 100%;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 10px;
+    padding-bottom: 6px;
+    scrollbar-width: none;
+  }
+
+  .nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  .nav a {
+    white-space: nowrap;
+    padding: 8px 12px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--border);
+  }
+
+  .hero {
+    padding-top: 56px;
+    gap: 14px;
+  }
+
+  .hero__im {
+    margin-top: 2px;
+    font-size: 18px;
+  }
+
+  .hero__hello {
+    font-size: 0.8rem;
+    letter-spacing: 0.06em;
+  }
+
+  .hero__cards {
+    grid-template-columns: 1fr;
+    max-width: 100%;
+    gap: 10px;
+  }
+
+  .contact-card__value {
+    overflow-wrap: anywhere;
+  }
+
+  .about-grid,
+  .skills-columns,
+  .edu-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-card,
+  .achievement-card,
+  .achievement-stat,
+  .skill-stack,
+  .contact-card,
+  .contact-info-card,
+  .contact-form,
+  .edu-card.big {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  .project-card {
+    gap: 14px;
+    padding: 20px 14px 16px;
+  }
+
+  .project-meta,
+  .project-subtitle,
+  .project-desc,
+  .project-date {
+    overflow-wrap: anywhere;
+  }
+
+  .project-tags,
+  .exp-tags,
+  .edu-courses {
+    gap: 8px;
+  }
+
+  .exp-outer-card {
+    padding: 14px 10px 12px;
+  }
+
+  .exp-timeline {
+    display: none;
+  }
+
+  .exp-card {
+    margin-left: 0;
+    padding: 16px 12px 12px;
+  }
+
+  .exp-card__header {
+    gap: 10px;
+  }
+
+  .exp-card__icon {
+    width: 2.8rem;
+    height: 2.8rem;
+    font-size: 1.9rem;
+  }
+
+  .contact-grid {
+    gap: 14px;
+  }
+
+  .contact-info-card,
+  .contact-form {
+    padding: 18px 14px 16px;
+    flex-basis: auto;
+  }
+
+  .contact-info-item {
+    padding: 10px 12px;
+  }
+
+  .contact-info-value {
+    overflow-wrap: anywhere;
+  }
+
+  .contact-form-group input,
+  .contact-form-group textarea {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  .section-title,
+  .contact-title,
+  .education-title,
+  .experience-title,
+  .project-title,
+  .skills-title,
+  .achievements-title {
+    font-size: clamp(1.7rem, 7vw, 2.2rem);
+    margin-bottom: 0.7rem;
+    text-align: center;
+  }
+
+  .section-title::after,
+  .hero__title::after {
+    width: 76px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 0 10px 56px;
+  }
+
+  .brand__mark {
+    font-size: 17px;
+  }
+
+  .hero__title {
+    font-size: clamp(2rem, 12vw, 2.75rem);
+    line-height: 1.06;
+  }
+
+  .hero__role {
+    font-size: 1rem;
+  }
+
+  .pill-btn {
+    width: 100%;
+    justify-content: center;
+    padding: 11px 14px;
+  }
+
+  .hero__social {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .section-chip {
+    font-size: 0.78rem;
+    padding: 6px 10px;
+  }
+
+  .about-text,
+  .project-desc,
+  .exp-list li,
+  .achievement-card__desc,
+  .contact-info-desc {
+    font-size: 0.95rem;
+  }
 }
 
